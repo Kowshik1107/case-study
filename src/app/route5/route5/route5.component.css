@@ -1,0 +1,25 @@
+.container {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.table {
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid grey;
+  border-spacing: 0px;
+  padding: 10px 40px;
+  align-content: initial;
+}
+th {
+  cursor: pointer;
+}
+
+th .fa-sort {
+  opacity: 0.3;
+}
+th .fa-sort:hover {
+  opacity: 1;
+}

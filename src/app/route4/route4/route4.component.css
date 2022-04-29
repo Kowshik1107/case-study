@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  border: 2px solid grey;
+  padding: 20px;
+}
+section {
+  margin-bottom: 15px;
+}
+.sone {
+  border: 2px solid grey;
+  width: 450px;
+  height: 200px;
+}
+.stwo {
+  border: 2px solid grey;
+  width: 650px;
+  height: 200px;
+}
+.sthree {
+  border: 2px solid grey;
+  width: 450px;
+  height: 200px;
+}
+.sfour {
+  border: 2px solid grey;
+  width: 650px;
+  height: 200px;
+}
+.timerMainDiv {
+  margin: 17px;
+}
+
+input {
+  height: 1.5rem;
+  width: 12rem;
+  margin-left: 1rem;
+}
+
+.buttondiv {
+  margin: 24px;
+  margin-left: 115px;
+}
+
+.button {
+  height: 30px;
+  margin: 5px;
+  width: 116px;
+  cursor: pointer;
+}
+.timelogs {
+  height: 60px;
+  overflow-y: scroll;
+}

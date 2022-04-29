@@ -1,0 +1,22 @@
+<main>
+  <section id="timer">
+    <div id="timer">
+      <app-time [time]="time" #displayChild></app-time>
+    </div>
+    <div id="reset">
+      <app-timer
+        (sendTime)="getTime($event)"
+        (startTimer)="startTimer($event)"
+        (resetAll)="resetAll()"
+      ></app-timer>
+    </div>
+  </section>
+  <section id="timer">
+    <div class="commonAlign">
+      <app-logs #logChild></app-logs>
+    </div>
+    <div class="commonAlign">
+      <app-counter #trackChild></app-counter>
+    </div>
+  </section>
+</main>

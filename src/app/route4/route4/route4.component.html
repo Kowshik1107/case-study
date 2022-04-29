@@ -1,0 +1,22 @@
+<main>
+  <section class="sone">
+    <app-timer></app-timer>
+  </section>
+  <section class="stwo">
+    <div class="timerMainDiv">
+      <label for="timerlimit">Enter Timer Limit</label>
+      <input type="text" id="timerlimit" [(ngModel)]="timerLimit" />
+
+      <div class="buttondiv">
+        <button class="button" (click)="startPauseTimer()">Start/Pause</button>
+        <button class="button" (click)="resetTimer()">Reset</button>
+      </div>
+
+      <div class="timelogs">
+        <h3 *ngFor="let timerdata of countDownTimeLogs">{{ timerdata }}</h3>
+      </div>
+    </div>
+  </section>
+  <section class="sthree"><app-time></app-time></section>
+  <section class="sfour"><app-counter></app-counter></section>
+</main>

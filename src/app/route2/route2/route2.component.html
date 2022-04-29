@@ -1,0 +1,29 @@
+<main class="container">
+  <div class="grid-list">
+    <!-- <a [routerLink]="['./list']" ><i class="fa-solid fa-list fa-2x"></i></a>
+    <a><i class="fa-solid fa-grip fa-2x"></i></a> -->
+    <button class="btn-grid" (click)="isList=false"><i class="fa-solid fa-grip fa-2x"></i></button>
+    <button class="btn-list" (click)="isList=true"><i
+        class="fa-solid fa-list fa-2x"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="price">Filter :</label>
+    <select #rate id="price" class="select" (change)="priceFilter(rate.value)">
+      <option>--Select--</option>
+      <option value="asc">Low to High</option>
+      <option value="desc">High to low</option>
+    </select>
+  </div>
+  <div [ngClass]="isList ? 'list': 'grid'">
+    <div *ngFor="let product of products">
+      <div class="card">
+        <div class="bottom">
+          <img class="card-img-top" src="{{product.img}}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Price: ${{product.price}}</p>
+            <p class="card-text">{{product.Description}}</p>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

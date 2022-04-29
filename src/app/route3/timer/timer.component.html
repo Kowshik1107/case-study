@@ -1,0 +1,18 @@
+<main>
+  <section>
+    <form>
+      <label for="time">Enter Time Limit:</label>
+      <input
+        type="text"
+        name="time"
+        id="time"
+        (change)="timeChange()"
+        [(ngModel)]="time"
+      />
+      <div>
+        <input type="button" value="Start/Pause" (click)="initiateTimer()" />
+        <input type="reset" value="Reset" (click)="resetCounter()" />
+      </div>
+    </form>
+  </section>
+</main>

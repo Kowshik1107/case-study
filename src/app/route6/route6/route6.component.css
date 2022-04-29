@@ -1,0 +1,12 @@
+.container {
+  margin-top: 20px;
+}
+.div {
+  height: 2000px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
+}

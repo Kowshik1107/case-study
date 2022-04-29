@@ -1,0 +1,38 @@
+<main class="container">
+    <section>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th [column]="Name" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[0]}} <i
+                            class="fa-solid fa-sort"></i></th>
+                    <th [column]="Class" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[1]}} <i
+                            class="fa-solid fa-sort"></i>
+                    </th>
+                    <th [column]="Section" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[2]}}
+                        <i class="fa-solid fa-sort"></i>
+                    </th>
+                    <th [column]="Maths" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[3]}} <i
+                            class="fa-solid fa-sort"></i>
+                    </th>
+                    <th [column]="Science" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[4]}}
+                        <i class="fa-solid fa-sort"></i>
+                    </th>
+                    <th [column]="Social" [marks]="marks" (sortedData)="getSortedData($event)" appSort>{{columns[5]}} <i
+                            class="fa-solid fa-sort"></i>
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of marks">
+                    <td>{{item.Name}}</td>
+                    <td>{{item.Class}}</td>
+                    <td>{{item.Section}}</td>
+                    <td>{{item.Maths}}</td>
+                    <td>{{item.Science}}</td>
+                    <td>{{item.Social}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
